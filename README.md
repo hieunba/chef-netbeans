@@ -1,4 +1,3 @@
 # netbeans
 
-TODO: Enter the cookbook description here.
-
+This cookbook installs and configure NetBeans.
