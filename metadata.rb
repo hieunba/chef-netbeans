@@ -4,12 +4,12 @@ maintainer_email 'hi3unb@gmail.com'
 license 'Apache-2.0'
 description 'Installs/Configures netbeans'
 long_description 'Installs/Configures netbeans'
-version '0.1.0'
+version '0.1.1'
 chef_version '>= 12.14' if respond_to?(:chef_version)
 
 supports 'windows'
 
-depends 'java', '~> 2.1.0'
+depends 'java', '~> 2.2.0'
 
 # The `issues_url` points to the location where issues for this cookbook are
 # tracked.  A `View Issues` link will be displayed on this cookbook's page when

@@ -4,4 +4,4 @@ source 'https://supermarket.chef.io'
 
 metadata
 
-cookbook 'java', '~> 2.1.0'
+cookbook 'java', '~> 2.2.0'
