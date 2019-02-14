@@ -2,6 +2,10 @@
 
 This file is used to list changes made in each version of the netbeans cookbook.
 
+# 0.2.0 (2019-02-14)
+
+  - Cache NetBeans installation package
+
 # 0.1.2 (2019-02-13)
 
   - Fix incorrect Java path was specified
