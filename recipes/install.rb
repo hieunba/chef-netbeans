@@ -26,9 +26,12 @@ end
 
 include_recipe 'java'
 
-netbeans_source = node['netbeans']['jee']['source']
-netbeans_checksum = node['netbeans']['jee']['checksum']
 chef_cache_path = Chef::Config[:file_cache_path]
+version = node['netbeans']['jee']['version']
+netbeans_source = node['netbeans']['jee']['source']
+netbeans_filename = "netbeans-#{version}-javaee-windows.exe"
+netbeans_filepath = ::File.join(chef_cache_path, netbeans_filename)
+netbeans_checksum = node['netbeans']['jee']['checksum']
 state_path = ::File.join(chef_cache_path, 'state.xml')
 
 template state_path do
@@ -38,11 +41,17 @@ template state_path do
             })
 end
 
+remote_file netbeans_filepath do
+  source netbeans_source
+  checksum netbeans_checksum
+  action :create
+end
+
 netbeans_package_name = "NetBeans IDE #{node['netbeans']['jee']['version']}"
 netbeans_install_options = "--silent --state #{state_path}"
 
 windows_package netbeans_package_name do
-  source netbeans_source
+  source netbeans_filepath
   checksum netbeans_checksum
   action :install
   installer_type :custom
