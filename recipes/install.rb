@@ -34,6 +34,7 @@ state_path = ::File.join(chef_cache_path, 'state.xml')
 template state_path do
   source 'state.xml.erb'
   variables({
+    java_path: node['java']['java_home']
             })
 end
 
