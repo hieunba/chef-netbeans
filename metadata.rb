@@ -4,7 +4,7 @@ maintainer_email 'hi3unb@gmail.com'
 license 'Apache-2.0'
 description 'Installs/Configures netbeans'
 long_description 'Installs/Configures netbeans'
-version '0.2.0'
+version '0.3.0'
 chef_version '>= 12.14' if respond_to?(:chef_version)
 
 supports 'windows'

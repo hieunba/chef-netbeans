@@ -2,6 +2,10 @@
 
 This file is used to list changes made in each version of the netbeans cookbook.
 
+# 0.3.0 (2019-02-24)
+
+  - Set install timeout to 1500
+
 # 0.2.0 (2019-02-14)
 
   - Cache NetBeans installation package
