@@ -55,5 +55,6 @@ windows_package netbeans_package_name do
   checksum netbeans_checksum
   action :install
   installer_type :custom
+  timeout node['netbeans']['timeout']
   options netbeans_install_options
 end
