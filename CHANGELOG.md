@@ -2,6 +2,10 @@
 
 This file is used to list changes made in each version of the netbeans cookbook.
 
+# 0.3.1 (2019-04-28)
+
+  - Update download source for NetBeans from download.netbeans.org to download.oracle.com
+
 # 0.3.0 (2019-02-24)
 
   - Set install timeout to 1500
