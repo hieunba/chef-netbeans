@@ -2,6 +2,12 @@
 
 This file is used to list changes made in each version of the netbeans cookbook.
 
+# 0.4.0 (2019-06-20)
+
+  - Add recipe force_remove to supports uninstall a broken NetBeans install
+  - Add recipe remove to supports usual uninstall
+  - Add recipe uninstall which checks locking then calls recipe force_remove by default
+
 # 0.3.1 (2019-04-28)
 
   - Update download source for NetBeans from download.netbeans.org to download.oracle.com
