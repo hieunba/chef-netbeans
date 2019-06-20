@@ -33,3 +33,10 @@ suites:
       inspec_tests:
         - test/integration/default
     attributes:
+  - name: uninstall
+    run_list:
+      - recipe[netbeans::uninstall]
+    verifier:
+      inspec_tests:
+        - test/integration/uninstall
+    attributes:
